@@ -1,0 +1,91 @@
+<!--Criando o corpo do nosso HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Minha Pagina</title>
+<meta charset="utf-8" >
+<link rel="stylesheet" type ="text/css" href= "Bootstrap/css/bootstrap.min.css"> <!--Chamando a biblioteca do boot para o nosso html-->
+<link rel="stylesheet" type ="text/css" href= "css/style.css"> <!--Chamando o css para o nosso html-->                                                
+</head>
+    <body>
+        <!--Criando a Barra de Navegação com o comando do bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <a class="navbar-brand" href="#">
+       <img src="img/logo.png" >  <!--adicionamos imagem ao cabeçalho da nossa pagina
+                                                            e ajustamos sua altura com o width e height  -->
+        <a>
+
+ <!--Agora vamos criar a Div da nossa barra(Lembrando que essa DIV foi criada pelos componentes do boot)-->
+        <div class="collapse navbar-collapse">
+           <ul class="navbar-nav">  <!--Criação da lista não ordenada chamando a classe da barra-->
+         <!--Abaixo vamos adicionar 3 itens de navegação -->
+                  <li class="nav-item">  <!-- Se aplicarmos o "active" junto ao "nav item" 
+                                              vamos deixar o botao como selecionado-->
+                   <a class="nav-link"  href ="#valores" >Valores</a>
+                  </li>
+                   <li class="nav-item"> 
+                    <a class="nav-link" href ="#Parceiros" >Parceiros</a>
+                   </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href ="#Servicos" >Servicos</a>
+                   </li>
+           </ul>
+        </div>
+       </nav>  
+
+       <section id="valores" > <!-- Criando a sessão com um ID para ser linkado a lista -->
+       <div class= "container-fluid valores text-center margin">   <!-- Criando a classe containter linkado com quem somos
+                                                        logo apos chamamos a classe "text-center" para centralizar o texto -->
+          <h2 class="margin">Valores</h2>
+          <img src="img/Time.jpg" class="rounded-circle" width="400" height="300">   <!-- Inserimos uma imagem no nosso topico e arrendodamos ela -->
+         <h3 class= "margin"> Sustentabilidade - Engajamento - Oportunidade </h3> <!-- inserindo uma descrição-->
+       </div>
+       </section> 
+
+       <selection id="Parceiros"> <!-- Criando a 2 sessao com id para ser linkado a lista -->
+
+            <div class="container-fluid text-center margin parceiros"> <!-- Iniciando a classe parceiros com as especifiações desejadas -->
+             <h2 class="margin"> Parceiros</h2> <!--aplicando margem para o texto não ficar mto proximo-->
+               <div class ="container"> <!--Iniciando a Classe containter para aplicar a divisão de colunas-->
+                  <div class="row"> <!-- aplicando a classe coluna-->
+                     <div class="col-md-4"><!--escolhendo o tamanho e largura da coluna(nesse exemplo "Medio")-->
+                       <img src="img/parcerios 1.png" alt="parceiros 1" height="150" width="220"> <!--inserindo a 1 imagem, e alterando sua altura e largura 1-->
+                     </div>
+                     <div class="col-md-4"> <!--iniciando a 2 coluna-->
+                       <img src="img/Parceiros2.png" alt="Parceiros2"  height="100%" width="100%"> <!-- Iserindo a 2 imagem e alterando seu tamanho para se ajustar automaticamente -->
+                     </div>
+                     <div class="col-md-4"> <!--iniciando a 3 coluna-->
+                       <img src="img/mrv.png" alt="parceiros3" height="100%" width="100%">
+                     </div>
+                  </div>
+               </div>       
+            </div>
+
+       </selection>
+
+       <section id="Servicos"> <!-- iniciando a 3 sessao com id servicos-->
+
+          <div class="container-fluid text-center margin servicos"> 
+            <h2 class="margin"> Servicos</h2> <!--aplicando margem para o texto não ficar mto proximo-->
+             <div class="container">
+              <div class="row">
+               <div class="col-md-6"> <!-- na ultima sessão resolvemos por apenas 2 colunas sendo essa a 1-->
+                <p>Dev.Software Mobile </p> <!-- iniciando um paragrafo para por o texto acima da imagem em questão-->
+                 <img src="img/App.jpg" class="rounded-circle" height="100%" width="100%">
+               </div>
+               <div class="col-md-6"> <!-- 2 coluna-->
+                <p>Dev.Software em Desktop </p>  <!-- iniciando um paragrafo para por o texto acima da imagem em questão-->
+                <img src="img/Site 1.jpg" class="rounded-circle" height="100%" width="100%">
+               </div>             
+              </div>
+              </div> 
+          </div>
+            
+       </section>
+
+       <footer class="container-fluid text-center margin rodape"> <!-- Iniciando o nosso rodape centralizando o texto e aplicando outro container -->
+         <p>Desenvolvido por Sérgio Ferraz</p> <!-- aplicando paragrafo e colocando a autoria do codigo-->
+       </footer>
+
+    </body>
+</html>
